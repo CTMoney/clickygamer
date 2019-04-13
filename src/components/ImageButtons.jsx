@@ -2,18 +2,17 @@ import React from "react";
 
 const ImageButtons = props => {
   return (
-    <div className="card-deck">
-      {props.images.map( (image) => {
-        console.log(image)
-        return (
-          <div class="card">
-           <img class="card-img-top" name={image.name} src={image.url} alt={image.name} data-clicked={false} onClick={props.handleClick} value={0}></img>
-          </div>
-        )
-      })}
+    <div className="card">
+      <img
+        className="card-img-top"
+        id={props.id}
+        name={props.name}
+        src={props.url}
+        alt={props.name}
+        onClick={props.handleClick}
+      />
     </div>
   );
 };
 
 export default ImageButtons;
-
