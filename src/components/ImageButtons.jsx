@@ -7,7 +7,7 @@ const ImageButtons = props => {
         console.log(image)
         return (
           <div class="card">
-           <img class="card-img-top" src={image.url} alt={image.name} onClick={props.handleClick} value={0}></img>
+           <img class="card-img-top" name={image.name} src={image.url} alt={image.name} data-clicked={false} onClick={props.handleClick} value={0}></img>
           </div>
         )
       })}
