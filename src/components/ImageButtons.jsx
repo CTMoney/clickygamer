@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const ImageButtons = props => {
   return (
@@ -7,12 +7,12 @@ const ImageButtons = props => {
         className="card-img-top"
         id={props.id}
         name={props.name}
-        src={props.url}
+        src={props.image}
         alt={props.name}
         onClick={props.handleClick}
       />
     </div>
-  );
-};
+  )
+}
 
-export default ImageButtons;
+export default ImageButtons
