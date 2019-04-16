@@ -1,4 +1,5 @@
 {
+  "homepage": "https://ctmoney.github.io/clickygamer",
   "name": "clickygame",
   "homepage": "https://ctmoney.github.io",
   "version": "0.1.0",
@@ -12,7 +13,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
