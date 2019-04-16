@@ -1,7 +1,6 @@
 {
   "homepage": "https://ctmoney.github.io/clickygamer",
   "name": "clickygame",
-  "homepage": "https://ctmoney.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
