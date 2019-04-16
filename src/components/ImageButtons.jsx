@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const ImageButtons = props => {
   return (
@@ -12,7 +12,7 @@ const ImageButtons = props => {
         onClick={props.handleClick}
       />
     </div>
-  );
-};
+  )
+}
 
-export default ImageButtons;
+export default ImageButtons

@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react"
 
 const imageDeck = props => {
-    return ( 
-        <div className="card-deck">
-        {props.children}
-        </div>
-     )
+  return <div className="card-deck">{props.children}</div>
 }
- 
-export default imageDeck;
+
+export default imageDeck

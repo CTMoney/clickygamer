@@ -10,7 +10,7 @@ const Navbar = props => {
         </Link>
       </h1>
       <h2 className="navbar-text mx-auto">Click an image to begin!</h2>
-      <h2 className="navbar-text ml-auto">{`Score: ${props.score} | Top Score: ${props.topScore} `}</h2>
+      <h2 className="navbar-text ml-auto">{`Score: ${ props.score } | Top Score: ${ props.topScore }`}</h2>
     </nav>
   )
 }

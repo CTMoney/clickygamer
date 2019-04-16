@@ -27,15 +27,7 @@ class Main extends Component {
   }
 
   handleClick = event => {
-    let clickedArr = this.state.clicked
-
-    if (this.state.score == 6) {
-      alert("WINNER")
-      this.setState({
-        score: 0,
-        clicked: []
-      })
-    } else if (clickedArr.includes(event.target.id)) {
+    if (this.state.clicked.indexOf(event.target.id) !== -1) {
       alert("LOSER")
       this.setState({
         score: 0,
@@ -45,10 +37,19 @@ class Main extends Component {
       clickedArr.push(event.target.id)
       this.setState({
         score: (this.state.score += 1),
-        clicked: clickedArr
+        clicked: (this.state.clicked += event.target.id)
       })
+
       if (this.state.topScore < this.state.score) {
         this.setState({ topScore: (this.state.topScore += 1) })
+      }
+
+      if (this.state.score == this.state.images.length) {
+        alert("WINNER")
+        this.setState({
+          score: 0,
+          clicked: []
+        })
       }
     }
   }
