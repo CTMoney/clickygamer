@@ -34,7 +34,6 @@ class Main extends Component {
         clicked: []
       })
     } else {
-      clickedArr.push(event.target.id)
       this.setState({
         score: (this.state.score += 1),
         clicked: (this.state.clicked += event.target.id)
